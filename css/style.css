@@ -8,8 +8,8 @@ html {
 }
 
 img{
-    max-width:200px;
-    max-height:200px;
+    height:200px;
+    width:300px;
 }
 
 *, *:before, *:after {
@@ -30,21 +30,29 @@ ul{
 
 nav ul {
     display:flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    padding-right:20px;
 }
 
 #hero{
     padding-top:30px;
     display:flex;
     flex-direction:column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     overflow-x:hidden;
     overflow-y:auto;
+    height:100vh;
 }
 
 #projets ul{
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-row-gap:50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     justify-items:center;
     align-items:center;
 }
@@ -60,20 +68,18 @@ nav ul {
 
 .cover-desc {
     position: absolute;
-    top: 50%;
+    top: -50px;
     left: 50%;
     transform: translate(-50%, -50%);
+    display:hidden;
+    transition:all 1s smooth;
   }
 
-.btn-large{
-    cursor:pointer;
-    transition:all 1s smooth;
-    background-color: var(--bleu);
-    border:1px solid white;
-    height:2rem;
+.affiche{
+    top:50%;
+    display:block;
     color:white;
-    border-radius:10px;
-}
+} 
 
 .btn-large:hover{
     background-color:#fff;

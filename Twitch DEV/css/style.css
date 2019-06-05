@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-family:sans-serif;
+}
+
+:root{
+    --violet:#6441A4;
+}
+
+header{
+    background-color:var(--violet);
+    position:fixed;
+    width:100%;
+}
+
+#logo{
+    margin-left:2rem;
+    max-height:2rem;
+    width:auto;
+}
+
+nav{
+    padding:.5rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-links{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.nav-links li a{
+    padding:0 1rem;
+    color:#e5e5e5;
+    text-decoration:none;
+}
+
+.nav-links li a:hover{
+    color:white;
+}
+
+.searchbar{
+    color:#999;
+    border-radius:5px;
+    margin-right:1rem;
+    height:2rem;
+}
+
+.signup-btn{
+    padding:0 .2rem;
+    color:white;
+    border:1px solid white;
+    border-radius:5px;
+    background:var(--violet);
+    height:1.5rem;
+
+}
+
+.signup-btn:hover{
+    cursor:pointer;
+    color:var(--violet);
+    background:white;
+
+}
+
+.hero{
+    color:white;
+    width:100vw;
+    height:70vh;
+    background:url(../img/gamesbackground.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    box-shadow:0 2rem 1rem -1rem gray;
+    margin-bottom:50px;
+}
+
+section, .content-wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.layer{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:inherit;
+    height:inherit;
+    background:rgba(100,65,164,0.85);
+}
+
+.hero-btns{
+    margin-top:3rem;
+}
+
+.hero-btns a, .btn-left{
+    border-radius:1px;
+    padding:1rem 3rem;
+    margin:55px .5rem;
+
+}
+
+.btn-left{
+    color:white;
+    background:var(--violet);
+    border:1px solid mediumpurple;
+
+}
+
+.btn-left:hover{
+    background:mediumpurple;
+    border:1px solid var(--violet);
+    cursor:pointer;
+}
+
+.btn-right{
+    border:1px solid white;
+}
+
+.btn-right:hover{
+    color:var(--violet);
+    background:white;
+    cursor:pointer;
+}
+
+.content-wrapper{
+    width:80vw;
+}
+
+.keys ul{
+    display:grid;
+    grid-template-columns: 4fr 3fr 4fr;
+}
+
+.keys ul li{
+    padding:2rem 5px 0 5px;
+    margin:0 1rem;
+    border:2px solid lightgrey;
+    border-radius:1px;
+}
+
+.keys ul li:hover{
+    box-shadow:0 1rem 3rem gray;
+    border-image: linear-gradient(to bottom, #1900ff, #c86dd7) 1 round;
+
+
+}
+
+
+/* Text Styling */
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    text-align:center;
+}
+
+h1{
+    margin:10px 0 20px 0;
+    font-size:3.5rem;
+}
+
+h2{
+    font-size:3rem;
+}
+
+h3{
+    font-size:1rem;
+    font-weight:100;
+}
+
+h5{
+    font-size:1.2rem;
+    font-weight:100;
+    margin-bottom:30px;
+}
+
+#whyTwitch h1{
+    color:var(--violet)
+}
+
+@media (max-width:650px){
+    .nav-links{
+        display:none;
+    }
+    .hero-btns{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        margin:0;
+    }
+    .keys ul{
+        display:flex;
+        flex-direction:column;
+    }
+        .keys ul li{
+            margin:1rem 0;
+        }
+
+}

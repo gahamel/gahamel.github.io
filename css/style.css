@@ -7,6 +7,10 @@ html {
     font-family:'Roboto';
 }
 
+img{
+    max-width:200px;
+    max-height:200px;
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -20,9 +24,12 @@ nav {
 
 }
 
+ul{
+    list-style:none;
+}
+
 nav ul {
     display:flex;
-    list-style:none;
 }
 
 #hero{
@@ -35,10 +42,28 @@ nav ul {
     overflow-y:auto;
 }
 
+#projets ul{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items:center;
+    align-items:center;
+}
+
 #img-tete{
     max-width:120px;
     height:auto;
 }
+
+.container{
+    position:relative;
+}
+
+.cover-desc {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 .btn-large{
     cursor:pointer;

@@ -1,0 +1,57 @@
+:root{
+    --bleu:#2B87DA;
+}
+
+html {
+    box-sizing: border-box;
+    font-family:'Roboto';
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+nav {
+    padding:0 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+nav ul {
+    display:flex;
+    list-style:none;
+}
+
+#hero{
+    padding-top:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+#img-tete{
+    max-width:120px;
+    height:auto;
+}
+
+.btn-large{
+    cursor:pointer;
+    transition:all 1s smooth;
+    background-color: var(--bleu);
+    border:1px solid white;
+    height:2rem;
+    color:white;
+    border-radius:10px;
+}
+
+.btn-large:hover{
+    background-color:#fff;
+    border:1px solid var(--bleu);
+    color:teal;
+}
